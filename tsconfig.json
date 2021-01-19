@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",
+      "paths": {
+          "@/controllers/*": ["controllers/*"],
+          "@/services/*": ["services/*"],
+          "@/loaders/*": ["loaders/*"],
+          "@/models/*": ["models/*"],
+          "@/config/*": ["config/*"],
+          "@/middlewares/*": ["middlewares/*"],
+          "@/utils/*": ["utils/*"]
+      }
+    },
+    "lib": ["es2015"],
+    "include": [
+        "*.ts",
+        "**/*.ts",
+        "**/**/*.ts",
+    ],
+    "exclude": [
+        "./node_modules",
+        "./test"
+    ]
+}
